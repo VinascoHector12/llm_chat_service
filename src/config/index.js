@@ -3,8 +3,8 @@ import 'dotenv/config';
 export const config = {
   port: process.env.PORT || 3001,
   jwtSecret: process.env.JWT_SECRET || 'dev-secret',
-  basicLlmUrl: process.env.BASIC_LLM_URL || 'http://localhost:3002',
-  redisUrl: process.env.REDIS_URL || 'redis://localhost:6379',
+  basicLlmUrl: process.env.BASIC_LLM_URL || 'http://basic-chat-llm-service:3002/chat',
+  redisUrl: process.env.REDIS_URL || 'redis://redis:6379',
   
   database: {
     host: process.env.PGHOST,
